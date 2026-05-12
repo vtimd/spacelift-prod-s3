@@ -1,4 +1,3 @@
-#
 resource "aws_s3_bucket" "this" {
   bucket = "spacelift-prod-bucket-3"
 }
