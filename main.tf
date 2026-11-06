@@ -1,5 +1,8 @@
 resource "aws_s3_bucket" "this" {
-  bucket = "spacelift-prod-bucket-3"
+  bucket = "spacelift-prod-bucket-4"
+  timeouts {
+    create = "1s"
+  }
 }
 
 resource "aws_s3_bucket_public_access_block" "this" {
